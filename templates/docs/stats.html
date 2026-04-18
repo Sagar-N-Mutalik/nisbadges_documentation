@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Site Stats — NISBadges{% endblock %}
+
+{% block footer_year %}{{ year }}{% endblock %}
+
+{% block content %}
+<section class="nb-section" style="min-height: 80vh; display:flex; align-items:center;">
+  <div class="container z-10">
+
+    <p class="section-eyebrow" data-aos="fade-up">Internal Dashboard</p>
+    <h2 class="section-title" data-aos="fade-up" data-aos-delay="50">
+      Site <span>Statistics</span>
+    </h2>
+    <div class="title-line" data-aos="fade-up" data-aos-delay="100"></div>
+
+    <div class="row justify-content-center g-4 mt-4">
+
+      <!-- Total Views Card -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+        <div class="glass-card text-center p-5">
+          <div class="feature-icon-wrap mx-auto mb-3" style="width:64px;height:64px;font-size:1.8rem;">
+            <i class="fas fa-eye"></i>
+          </div>
+          <div class="stat-value" style="font-size:3.5rem; color:#fff;">
+            {{ total_views|floatformat:"0" }}
+          </div>
+          <div class="section-eyebrow mt-2">Total Page Views</div>
+          <p class="mt-3" style="color:var(--text-secondary); font-size:.9rem;">
+            Cumulative count of every visit to the NISBadges documentation page
+            since the site launched.
+          </p>
+        </div>
+      </div>
+
+      <!-- JSON API hint card -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="250">
+        <div class="glass-card text-center p-5 h-100">
+          <div class="feature-icon-wrap mx-auto mb-3" style="width:64px;height:64px;font-size:1.8rem;">
+            <i class="fas fa-code"></i>
+          </div>
+          <h4 style="color:#fff; font-weight:700; margin-bottom:12px;">JSON API</h4>
+          <p style="color:var(--text-secondary); font-size:.9rem; margin-bottom:20px;">
+            Fetch the raw view count programmatically via the JSON endpoint.
+          </p>
+          <code class="d-block p-3 rounded" style="background:rgba(0,0,0,0.4); color:var(--prime-main); font-size:.85rem; word-break:break-all;">
+            GET /stats/api/
+          </code>
+          <a href="{% url 'stats_api' %}" class="btn-primary-nb mt-4 d-inline-flex" style="font-size:.85rem; padding: 10px 24px;">
+            <i class="fas fa-external-link-alt"></i> Open JSON
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Back link -->
+    <div class="text-center mt-5" data-aos="fade-up">
+      <a href="{% url 'home' %}" class="btn-primary-nb" style="background: var(--glass-bg); border:1px solid var(--glass-border); box-shadow:none;">
+        <i class="fas fa-arrow-left"></i> Back to Docs
+      </a>
+    </div>
+
+  </div>
+</section>
+{% endblock %}

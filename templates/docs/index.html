@@ -1,0 +1,287 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}NISBadges — IEEE Student Branch Recognition Initiative{% endblock %}
+
+{% block footer_year %}{{ year }}{% endblock %}
+
+{% block content %}
+
+<!-- ===================== HERO ===================== -->
+<section class="hero-section" id="hero">
+  <div class="container z-10" data-aos="fade-up">
+
+    <div class="hero-badge">
+      <i class="fas fa-bolt"></i> NIE IEEE Student Branch PRESENTS
+    </div>
+
+    <h1 class="hero-title">
+      NISBADGES<br>
+      <span class="gradient-text">Recognition. Reward. Rise.</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      NISBadges honours IEEE members who go beyond attendance &mdash; rewarding
+      <strong>holistic impact</strong>, meaningful contributions, and a relentless
+      drive to make the community better.
+    </p>
+
+    <!-- Hero CTA -->
+    <div data-aos="fade-up" data-aos-delay="200">
+      <a href="#overview" class="btn-primary-nb">
+        <i class="fas fa-arrow-down"></i> Explore the Initiative
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- =================== OVERVIEW ================== -->
+<section class="nb-section" id="overview">
+  <div class="container">
+
+    <p class="section-eyebrow" data-aos="fade-up">About</p>
+    <h2 class="section-title" data-aos="fade-up" data-aos-delay="50">
+      What is <span>NISBadges?</span>
+    </h2>
+    <div class="title-line" data-aos="fade-up" data-aos-delay="100"></div>
+
+    <div class="glass-card overview-card mt-4" data-aos="zoom-in" data-aos-delay="150">
+      <p>
+        <strong>NISBadges</strong> is an initiative to recognize and encourage members who consistently
+        attend events, contribute meaningfully, and have an impactful presence within the
+        IEEE community. It rewards
+        <span class="highlight">holistic involvement</span>
+        rather than just raw attendance numbers. By celebrating every dimension of participation
+        — from showing up to leading, from ideating to executing — NISBadges ensures that the
+        right people are seen, celebrated, and empowered to grow into the leaders of tomorrow.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= WHY IT MATTERS ================ -->
+<section class="nb-section" id="why" style="background: rgba(10,16,36,0.5);">
+  <div class="container">
+
+    <p class="section-eyebrow" data-aos="fade-up">Purpose</p>
+    <h2 class="section-title" data-aos="fade-up" data-aos-delay="50">
+      Why It <span>Matters</span>
+    </h2>
+    <div class="title-line" data-aos="fade-up" data-aos-delay="100"></div>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="150">
+      NISBadges provides tangible recognition and opens real doors for dedicated IEEE members.
+    </p>
+
+    <div class="feature-grid">
+
+      <div class="feature-card" data-aos="flip-left" data-aos-delay="100">
+        <div class="feature-icon-wrap"><i class="fas fa-certificate"></i></div>
+        <h4>Credibility</h4>
+        <p>Earn pride and visibility within the IEEE community for your consistent, meaningful contributions and show the world what you stand for.</p>
+      </div>
+
+      <div class="feature-card" data-aos="flip-left" data-aos-delay="200">
+        <div class="feature-icon-wrap"><i class="fas fa-star"></i></div>
+        <h4>Recognition</h4>
+        <p>Be identified as a future leader. NISBadges highlights your commitment to excellence and amplifies your voice within the branch.</p>
+      </div>
+
+      <div class="feature-card" data-aos="flip-left" data-aos-delay="300">
+        <div class="feature-icon-wrap"><i class="fas fa-rocket"></i></div>
+        <h4>Opportunities</h4>
+        <p>Receive priority consideration for core team positions and ExeCom leadership roles — because your impact earns you access.</p>
+      </div>
+
+      <div class="feature-card" data-aos="flip-left" data-aos-delay="400">
+        <div class="feature-icon-wrap"><i class="fas fa-trophy"></i></div>
+        <h4>Reward</h4>
+        <p>Take home tangible proof of your dedication. A NISBadge is a permanent record of the impact you have made in the community.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================== THE THREE TIERS ================== -->
+<section class="nb-section" id="tiers">
+  <div class="container">
+
+    <p class="section-eyebrow" data-aos="fade-up">Recognition Levels</p>
+    <h2 class="section-title" data-aos="fade-up" data-aos-delay="50">
+      The Three <span>Tiers</span>
+    </h2>
+    <div class="title-line" data-aos="fade-up" data-aos-delay="100"></div>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="150">
+      Three distinct levels of recognition, each honouring a different degree
+      of commitment, contribution, and impact.
+    </p>
+
+    <div class="tiers-grid">
+
+      <!-- ── TIER III — PRO ── -->
+      <div class="tier-card tier-pro" data-aos="fade-right" data-aos-delay="100">
+
+        <!--
+          BADGE IMAGE — PRO (Silver)
+          ───────────────────────────────────────────────────
+          1. Save your badge image to:
+               static/images/badges/pro-badge.png
+          2. Recommended: transparent PNG, ~180×180 px
+          3. The <img> below will render it automatically.
+             If the file is missing, the fallback icon shows instead.
+        -->
+        <div class="badge-img-wrap">
+          <img
+            src="{% static 'images/badges/pro-badge.png' %}"
+            alt="PRO Badge"
+            class="badge-img"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          >
+          <!-- Fallback icon shown when image is absent -->
+          <div class="badge-img-fallback tier-pro-fallback">
+            <i class="fas fa-medal"></i>
+          </div>
+        </div>
+
+        <div class="tier-number">Tier III</div>
+        <div class="tier-name">PRO</div>
+        <div class="tier-badge">Top 20 Members</div>
+        <div class="tier-divider"></div>
+        <p class="tier-description">
+          Recognizes members who are constantly present and engaged at IEEE events.
+          PRO badge holders embody consistency — their commitment to showing up
+          and staying active is the foundation every great branch is built on.
+          This badge encourages them to push for active ExeCom roles and step into
+          greater leadership.
+        </p>
+      </div>
+
+      <!-- ── TIER II — ELITE ── -->
+      <div class="tier-card tier-elite" data-aos="fade-up" data-aos-delay="200">
+
+        <!--
+          BADGE IMAGE — ELITE (Gold)
+          ───────────────────────────────────────────────────
+          1. Save your badge image to:
+               static/images/badges/elite-badge.png
+          2. Recommended: transparent PNG, ~180×180 px
+        -->
+        <div class="badge-img-wrap">
+          <img
+            src="{% static 'images/badges/elite-badge.png' %}"
+            alt="ELITE Badge"
+            class="badge-img"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          >
+          <div class="badge-img-fallback tier-elite-fallback">
+            <i class="fas fa-crown"></i>
+          </div>
+        </div>
+
+        <div class="tier-number">Tier II</div>
+        <div class="tier-name">ELITE</div>
+        <div class="tier-badge">Top 10 Members</div>
+        <div class="tier-divider"></div>
+        <p class="tier-description">
+          Awarded to proactive volunteers who contribute significantly during the
+          planning and execution of events. ELITE members go beyond attendance —
+          they roll up their sleeves, take ownership, and actively shape the
+          branch's initiatives. Their effort drives the events that everyone
+          remembers.
+        </p>
+      </div>
+
+      <!-- ── TIER I — PRIME ── -->
+      <div class="tier-card tier-prime" data-aos="fade-left" data-aos-delay="300">
+
+        <!--
+          BADGE IMAGE — PRIME (Diamond/Cyan)
+          ───────────────────────────────────────────────────
+          1. Save your badge image to:
+               static/images/badges/prime-badge.png
+          2. Recommended: transparent PNG, ~180×180 px
+        -->
+        <div class="badge-img-wrap">
+          <img
+            src="{% static 'images/badges/prime-badge.png' %}"
+            alt="PRIME Badge"
+            class="badge-img"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          >
+          <div class="badge-img-fallback tier-prime-fallback">
+            <i class="fas fa-gem"></i>
+          </div>
+        </div>
+
+        <div class="tier-number">Tier I</div>
+        <div class="tier-name">PRIME</div>
+        <div class="tier-badge">Top 5 Members</div>
+        <div class="tier-divider"></div>
+        <p class="tier-description">
+          The highest distinction in NISBadges. Reserved for enthusiastic members
+          who contribute across <em>every</em> facet — from ideation to promotion,
+          from planning to impactful execution and measurable results. PRIME represents
+          excellence in all dimensions and is a mark of true community leadership.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================== HOW IT WORKS ================== -->
+<section class="nb-section" id="how" style="background: rgba(10,16,36,0.5);">
+  <div class="container">
+
+    <p class="section-eyebrow" data-aos="fade-up">Process</p>
+    <h2 class="section-title" data-aos="fade-up" data-aos-delay="50">
+      How It <span>Works</span>
+    </h2>
+    <div class="title-line" data-aos="fade-up" data-aos-delay="100"></div>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="150">
+      A transparent, merit-based process that rewards real involvement at every step.
+    </p>
+
+    <div class="steps-wrapper">
+
+      <div class="step-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="step-number">1</div>
+        <h4>Participate &amp; Contribute</h4>
+        <p>Attend IEEE events, volunteer for planning sessions, take on tasks, and contribute across ideation, execution, and promotion throughout the semester.</p>
+      </div>
+
+      <div class="step-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="step-number">2</div>
+        <h4>Score &amp; Evaluate</h4>
+        <p>A holistic scoring system measures attendance, volunteering depth, role contributions, and overall impact — going beyond just showing up.</p>
+      </div>
+
+      <div class="step-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="step-number">3</div>
+        <h4>Earn Your Badge</h4>
+        <p>Top performers are awarded their NISBadge tier at an official recognition event — a milestone in your IEEE journey and your professional identity.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =================== CTA =================== -->
+<section class="cta-section" id="cta">
+  <div class="container">
+    <div class="cta-card" data-aos="zoom-in">
+      <h2>Ready to Earn Your Badge?</h2>
+      <p>
+        Every event you attend, every task you own, every initiative you drive
+        brings you one step closer to recognition. Start your journey today.
+      </p>
+      <a href="#overview" class="btn-primary-nb">
+        <i class="fas fa-bolt"></i> Get Started
+      </a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
