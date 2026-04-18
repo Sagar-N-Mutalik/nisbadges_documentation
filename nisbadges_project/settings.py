@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-t5q=wgv@kk9q%ht$ns16ganaua5odk1(^#$3dcs+*+@js(6shq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('RENDER', False) == False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['nisbadges-documentation.onrender.com']
 
 
 # Application definition
